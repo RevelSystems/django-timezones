@@ -1,13 +1,13 @@
 from setuptools import setup
 
 setup(
-    name = "django-timezones",
+    name = "django-timezones-op",
     version = __import__("timezones").__version__,
-    author = "Brian Rosner",
-    author_email = "brosner@gmail.com",
-    description = "A Django reusable app to deal with timezone localization for users",
+    author = "Manuel Francisco, Brian Rosner",
+    author_email = "manuel@aircable.net, brosner@gmail.com",
+    description = "A Django reusable app to deal with timezone localization for users modified for OP",
     long_description = open("README").read(),
-    url = "http://github.com/brosner/django-timezones/",
+    url = "http://github.com/OpenProximity/django-timezones/",
     license = "BSD",
     packages = [
         "timezones",
