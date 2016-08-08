@@ -1,7 +1,7 @@
 from django.conf import settings
 from django.db import models
 from django.db.models import signals
-from django.utils.encoding import smart_unicode, smart_str
+from django.utils.encoding import smart_str
 
 import pytz
 
@@ -44,7 +44,7 @@ class TimeZoneField(models.CharField):
     
     def get_prep_value(self, value):
         if value is not None:
-            return smart_unicode(value)
+            return smart_str(value)
         return value
     
     def get_db_prep_save(self, value, connection=None):
